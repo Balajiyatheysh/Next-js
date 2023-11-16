@@ -1,4 +1,6 @@
 import "./globals.css";
+import NavBar from "./navbar/page";
+import Footer from "./footer/page";
 
 export const metadata = {
   title: 'Next.js',
@@ -12,7 +14,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true}>{children}</body>
+
+      <body suppressHydrationWarning={true}>
+        <header>
+          <NavBar />
+        </header>
+        {children}
+
+        <footer>
+          <Footer />
+        </footer>
+      </body>
     </html>
   )
 }
