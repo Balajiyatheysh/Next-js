@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "About balajiyatheysh"
+};
+
 const About =()=>{
   return(
     <div>
