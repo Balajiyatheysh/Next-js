@@ -5,6 +5,10 @@ export default function OrderProduct(){
   const handleClick=()=>{
     console.log("placing your order..!!")
     router.push("/");
+    // router.replace("/")
+    // router.forward ()
+    // router.back()
+    // router.refresh()
   }
   return (
     <>
