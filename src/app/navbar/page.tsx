@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Image from 'next/image'
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [flyer, setFlyer] = useState(false);
@@ -14,10 +15,12 @@ const NavBar = () => {
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <a href="#">
                 <span className="sr-only">Workflow</span>
-                <img
+                <Image
                   className="h-8 w-auto sm:h-10"
                   src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                   alt=""
+                  width={100}
+                  height={40}
                 />
               </a>
             </div>
@@ -186,7 +189,7 @@ const NavBar = () => {
                             Security
                           </p>
                           <p className="mt-1 text-sm text-gray-500">
-                            Your customers' data will be safe and secure.
+                            Your customers data will be safe and secure.
                           </p>
                         </div>
                       </a>
@@ -215,7 +218,7 @@ const NavBar = () => {
                             Integrations
                           </p>
                           <p className="mt-1 text-sm text-gray-500">
-                            Connect with third-party tools that you're already
+                            Connect with third-party tools that youre already
                             using.
                           </p>
                         </div>
@@ -579,10 +582,12 @@ const NavBar = () => {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
+                  <Image
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                     alt="Workflow"
+                    width={100}
+                    height={40}
                   />
                 </div>
                 <div className="-mr-2">

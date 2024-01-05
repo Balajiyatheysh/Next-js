@@ -1,4 +1,4 @@
-export default function (){
+export default function lib (){
   return <div>you cannot view this in the browser</div>
 }
 
