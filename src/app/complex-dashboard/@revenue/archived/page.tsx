@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function UserRevenue (){
   return(
-    <Card> UserRevenue 
-      <Link href='/complex-dashboard/archived'>Archived</Link>
+    <Card> Archived Revenue 
+      <Link href='/complex-dashboard/'>Default</Link>
       </Card>
   )
 }
