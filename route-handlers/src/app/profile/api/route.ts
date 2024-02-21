@@ -20,4 +20,4 @@ export async function GET(request: NextRequest) {
       "Set-Cookie": "theme=dark",
     },
   });
-}
+};
