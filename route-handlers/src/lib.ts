@@ -15,7 +15,7 @@ export const defaultSession : SessionData = {
 
 export const sessionOptions : SessionOptions = {
   password: process.env.SECRET_KEY!,
-  cookieName: "lama-session",
+  cookieName: "auth-sessions",
   cookieOptions:{
     httpOnly:true,
     secure: process.env.NODE_ENV === "production"

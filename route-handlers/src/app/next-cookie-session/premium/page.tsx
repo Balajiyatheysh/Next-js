@@ -7,14 +7,14 @@ const PremiumPage = async () =>{
   const session = await getSession();
 
   if (!session.isLoggedIn) {
-    redirect("/");
+    redirect("/next-cookie-session/");
   }
 
   if (!session.isPro) {
     return (
       <div className="notPremium">
         <h1>Only premium user can see the content!</h1>
-        <Link href="/profile">
+        <Link href="/next-cookie-session/profile">
           Go to the profile page to upgrade to premium
         </Link>
       </div>

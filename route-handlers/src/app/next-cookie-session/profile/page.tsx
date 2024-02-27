@@ -5,7 +5,7 @@ const Profilepage = async () => {
   const session = await getSession();
 
   if (!session.isLoggedIn) {
-    redirect("/");
+    redirect("/next-cookie-session/");
   }
 
   return (

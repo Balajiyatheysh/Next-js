@@ -47,14 +47,14 @@ export const login = async (
   session.isLoggedIn = true;
 
   await session.save();
-  redirect("/");
+  redirect("/next-cookie-session/");
 };
 
 
 export const logout =async()=>{
   const session = await getSession();
   session.destroy();
-  redirect("/");
+  redirect("/next-cookie-session/");
 }
 
 export const changePremium = async () => {
@@ -63,7 +63,7 @@ export const changePremium = async () => {
   isPro = ! session.isPro;
   session.isPro = isPro;
   await session.save();
-  revalidatePath("/profile");
+  revalidatePath("/next-cookie-session/profile");
 };
 
 export const changeUsername = async (formData: FormData) =>{
@@ -76,5 +76,5 @@ export const changeUsername = async (formData: FormData) =>{
 
   session.username = username;
   await session.save();
-  revalidatePath("/profile");
+  revalidatePath("/next-cookie-session/profile");
 };
