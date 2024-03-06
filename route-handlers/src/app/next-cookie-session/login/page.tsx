@@ -1,5 +1,5 @@
-import { getSession } from "@/actions";
-import LoginForm from "@/components/loginForm";
+import { getSession } from "../../../actions";
+import LoginForm from "../../../components/loginForm";
 import {redirect} from "next/navigation";
 
 
